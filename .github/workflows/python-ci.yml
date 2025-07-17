@@ -1,0 +1,26 @@
+name: Executar limpeza de dados
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Clonar o repositório
+      uses: actions/checkout@v3
+
+    - name: Configurar Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.11"
+
+    - name: Instalar dependências
+      run: |
+        pip install -r requirements.txt
+
+    - name: Executar script de limpeza
+      run: |
+        python limpeza.py
