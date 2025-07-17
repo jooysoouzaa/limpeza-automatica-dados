@@ -1,6 +1,6 @@
 # Limpeza Automática de Dados
 
-Este projeto tem como objetivo demonstrar um processo simples de **automação com Python e CI/CD utilizando GitHub Actions**.
+Esse projeto tem o objetivo demonstrar um processo simples de **automação com Python e CI/CD utilizando GitHub Actions**.
 
 ## 🔍 O que o script faz:
 - Lê um arquivo CSV com dados brutos (`data/dados.csv`);
