@@ -10,6 +10,8 @@ on:
 jobs:
   executar-script:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write 
 
     steps:
       - name: Clonar o repositório
@@ -30,7 +32,7 @@ jobs:
       - name: Commit e push dos arquivos gerados
         uses: EndBug/add-and-commit@v9
         with:
-          author_name: github-actions
-          author_email: github-actions@github.com
+          author_name: github-actions[bot]
+          author_email: 41898282+github-actions[bot]@users.noreply.github.com
           message: 'Arquivo dados_limpos.csv atualizado automaticamente pelo GitHub Actions'
-          add: 'output/dados_limpos.csv'
+          add: 'output/dados_limpos.csv' 
