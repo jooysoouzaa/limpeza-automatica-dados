@@ -32,5 +32,5 @@ jobs:
         with:
           author_name: github-actions
           author_email: github-actions@github.com
-          message: 'Arquivo dadoslimpos.csv atualizado automaticamente pelo GitHub Actions'
+          message: 'Arquivo dados_limpos.csv atualizado automaticamente pelo GitHub Actions'
           add: 'output/dadoslimpos.csv'
