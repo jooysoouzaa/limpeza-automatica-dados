@@ -36,3 +36,4 @@ jobs:
           author_email: 41898282+github-actions[bot]@users.noreply.github.com
           message: 'Arquivo dados_limpos.csv atualizado automaticamente pelo GitHub Actions'
           add: 'output/dados_limpos.csv' 
+          skip_ci: true
