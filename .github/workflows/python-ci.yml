@@ -27,10 +27,10 @@ jobs:
       - name: Executar script de limpeza
         run: python limpeza.py
 
-      - name: Fazer commit do resultado da limpeza
-        run: |
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
-          git add output/
-          git commit -m "Atualiza dados processados automaticamente" || echo "Sem alterações para commitar"
-          git push
+      - name: Commit e push dos arquivos gerados
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: github-actions
+          author_email: github-actions@github.com
+          message: 'Arquivo dadoslimpos.csv atualizado automaticamente pelo GitHub Actions'
+          add: 'output/dadoslimpos.csv'
